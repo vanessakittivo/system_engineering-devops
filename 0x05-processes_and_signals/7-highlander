@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# This script displays "To infinity and beyond" and handles SIGTERM
-trap 'echo "I am invincible!!!"' TERM
+# Highlander
+# print I am invincible!!! when receiving a SIGTERM signal
+trap "echo I am invincible!!!" SIGTERM
 while true; do
-    echo "To infinity and beyond"
-    sleep 2
-done
+  echo "To infinity and beyond"
+  sleep 2
+done;
